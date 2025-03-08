@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.1.0" />
+    <PackageReference Include="Siemens.Simatic.S7.Webserver.API" Version="3.2.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Auth\" />
+    <Folder Include="Health\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\S71500.RestApi.Application\S71500.RestApi.Application.csproj" />
+    <ProjectReference Include="..\S71500.RestApi.Contracts\S71500.RestApi.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>
